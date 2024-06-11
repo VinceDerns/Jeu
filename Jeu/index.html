@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="style.css">
+    <title>Simon_Game</title>
+</head>
+
+<body>
+    <main>
+        <h3 class="best_score"></h3>
+        <h2 class="level">Niveau 1</h2>
+        <div class="container">
+            <div class="line">
+                <div class="color" id="green"></div>
+                <div class="color" id="red"></div>
+            </div>
+            <div class="line">
+                <div class="color" id="yellow"></div>
+                <div class="color" id="blue"></div>
+            </div>
+            <div class="center">
+                
+            </div>
+        </div>
+        <div class="loose">
+            <h2>La Partie est terminée</h2>
+            <p>Votre score est de : <span class="score">12</span></p>
+            <p>Voulez-vous rejouer ?</p>
+            <button class="button_yes">Oui</button>
+        </div>
+        <button id="play">Jouer</button>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

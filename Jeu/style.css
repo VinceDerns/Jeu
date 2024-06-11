@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.best_score{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.level{
+    opacity: 0;
+    margin: 1rem 0;
+    color: white;
+    font-size: 2rem;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.container{
+    width: 60vh;
+    height: 60vh;
+    border: 15px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.line{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.color{
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    transition: background-color 0.2s;
+}
+
+.color:hover{
+    cursor: pointer;
+}
+
+#blue{
+    background-color: rgb(20, 20, 104);
+    /* background-color: rgb(104, 104, 255); */
+}
+
+#red{
+    background-color: rgb(134, 14, 14);
+    /* background-color: rgb(255, 80, 80); */
+}
+
+#green{
+    background-color: rgb(14, 77, 14);
+    /* background-color: rgb(80, 255, 80); */
+}
+
+#yellow{
+    background-color: rgb(107, 107, 18);
+    /* background-color: rgb(255, 255, 80); */
+}
+
+.center{
+    background-color: black;
+    color: white;
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 32%;
+    left: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,1) 35%,rgba(99,99,99,1) 100%);
+}
+
+#play{
+    margin-top: 2rem;
+    padding: 0 2rem;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+
+#play:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.loose{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    position: absolute;
+    top: 410px;
+    display: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.button_yes{
+    display: block;
+    padding: 0 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.button_yes:hover{
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+    cursor: pointer;
+}
